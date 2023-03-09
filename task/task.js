@@ -4,7 +4,33 @@
  * Object memiliki property: name, age, major.
  * Note: Ubah var menggunakan JavaScript Modern.
  */
-var users;
+const users = [
+  {
+    "name": "Ilham",
+    "age": "20",
+    "major": "IT"
+  },
+  {
+    "name": "Jack",
+    "age": "20",
+    "major": "IT"
+  },
+  {
+    "name": "Meysha",
+    "age": "17",
+    "major": "Accounting"
+  },
+  {
+    "name": "Naya",
+    "age": "21",
+    "major": "Economics"
+  },
+  {
+    "name": "Paul",
+    "age": "22",
+    "major": "Cybersecurity"
+  },
+]
 
 /**
  * TODO 2
@@ -12,15 +38,21 @@ var users;
  * Hint: Gunakan for/for-of.
  * Note: Ubah function menggunakan arrow function.
  */
-function all() {}
-
+const all =() => {
+  for (const x of users) {
+    console.log(users)
+  }
+}
 /**
  * TODO 3
  * Buat function store: Menambahkan user baru.
  * Hint: Gunakan method push.
  * Note: Ubah function menggunakan arrow function.
  */
-function store(user) {}
+  const store =(user) => {
+    let ob = {name: 'Karl', age: 25, major: 'Economics'}
+    users.push(ob);
+   }
 
 /**
  * TODO 4.
@@ -28,7 +60,13 @@ function store(user) {}
  * Hint: re-assign array.
  * Note: Ubah function menggunakan arrow function.
  */
-function update(index, user) {}
+const update =(index, user) => {
+  for (const i of users) {
+    if (i.name == 'Karl') {
+      i.name = 'Kyle';
+    }
+  }
+}
 
 /**
  * TODO 5.
